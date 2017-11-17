@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".controllers.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".controllers.ThingsToDoActivity"
+            android:label="@string/things_to_do"
+            android:parentActivityName=".controllers.MainActivity"></activity>
     </application>
 
 </manifest>

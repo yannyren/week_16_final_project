@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Helpers</string>
+    <string name="HELPERS">HELPERS</string>
+    <string name="Helpers">HELPERS</string>
+    <string name="slogan">Flag It, Tag It \n Helper It!</string>
+    <string name="things_to_do">Things to Do</string>
 </resources>

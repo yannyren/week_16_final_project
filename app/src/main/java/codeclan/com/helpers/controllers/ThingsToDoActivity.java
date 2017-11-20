@@ -1,21 +1,17 @@
 package codeclan.com.helpers.controllers;
 
-import android.content.Context;
 import android.content.Intent;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import codeclan.com.helpers.R;
+import codeclan.com.helpers.adapter.ToDoListAdapter;
 import codeclan.com.helpers.models.Task;
 import codeclan.com.helpers.models.ToDoList;
 
@@ -69,9 +65,12 @@ public class ThingsToDoActivity extends AppCompatActivity {
 
     }
 
-    public void getTask(View listView) {
-//        Task task = (Task)listItem.getTag();
-
+    public void getTask(View listItemSelected) {
+        Task task = (Task)listItemSelected.getTag();
+        Log.d("Task Descrition", task.getTaskDescription());
+        Toast.makeText(this, String.valueOf(task.getStartingTime()),Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, TaskActivity.class);
+        startActivity(intent);
     }
 
 

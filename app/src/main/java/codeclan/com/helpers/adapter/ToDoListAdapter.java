@@ -1,4 +1,4 @@
-package codeclan.com.helpers.controllers;
+package codeclan.com.helpers.adapter;
 
 import android.content.Context;
 import android.graphics.Movie;

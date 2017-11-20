@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 //                setContentView(R.layout.activity_things_to_do);
 
             }
-        }, 4000);
+        }, 3000);
 
     }
 }

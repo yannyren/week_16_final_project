@@ -7,23 +7,29 @@ import java.sql.Time;
  */
 
 public class Task {
-    private Time startingTime;
-    private Time finishingTime;
+    private Integer id;
+    private Integer startingTime;
+    private Integer finishingTime;
     private String taskDescription;
 
-    public Task(Time startingTime, Time finishingTime, String taskDescription) {
+    public Task(Integer id, Integer startingTime, Integer finishingTime, String taskDescription) {
+        this.id = id;
         this.startingTime = startingTime;
         this.finishingTime = finishingTime;
         this.taskDescription = taskDescription;
     }
 
-    public Time getStartingTime() {
+    public Integer getId() {return this.id;}
+
+    public Integer getStartingTime() {
         return this.startingTime;
     }
 
-    public Time getFinishingTime() {
+    public Integer getFinishingTime() {
         return this.finishingTime;
     }
+
+    public String getTaskDescription()  {return this.taskDescription;}
 
 
 }

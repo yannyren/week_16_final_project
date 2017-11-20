@@ -4,4 +4,6 @@
     <string name="Helpers">HELPERS</string>
     <string name="slogan">Flag It, Tag It \n Helper It!</string>
     <string name="things_to_do">Things to Do</string>
+    <string name="search_bar">search_bar</string>
+    <string name="search_task">Search Task</string>
 </resources>

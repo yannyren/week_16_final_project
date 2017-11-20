@@ -18,17 +18,22 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
+        //this.finish();
+
+
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
                 Intent intent = new Intent(ctx, ThingsToDoActivity.class);
                 startActivity(intent);
+                MainActivity.this.finish();
 
 //                setContentView(R.layout.activity_things_to_do);
 
             }
-        }, 5000);
+        }, 4000);
 
     }
 }

@@ -17,12 +17,12 @@ public class TaskTest {
 
     @Before
     public void before() {
-        this.task = new Task(1,1030, 1130, "pick up letter");
+        this.task = new Task("1","1030", "1130", "pick up letter");
     }
 
     @Test
     public void hasStartingTime(){
-        assertEquals(1030,task.getStartingTime().intValue());
+        assertEquals("1030",task.getStartingTime());
     }
 
     @Test

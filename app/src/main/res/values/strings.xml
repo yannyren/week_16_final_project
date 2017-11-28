@@ -6,4 +6,11 @@
     <string name="things_to_do">Things to Do</string>
     <string name="search_bar">search_bar</string>
     <string name="search_task">Search Task</string>
+    <string name="starting_time">starting_time</string>
+    <string name="finishing_time">finishing_time</string>
+    <string name="task_description">task_description</string>
+    <string name="task_id">task_id</string>
+    <string name="add_task">Add Task</string>
+    <string name="view_all">View All Tasks</string>
+    <string name="update_task">Update Task</string>
 </resources>

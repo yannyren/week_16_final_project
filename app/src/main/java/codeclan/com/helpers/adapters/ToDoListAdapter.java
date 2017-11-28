@@ -1,7 +1,6 @@
-package codeclan.com.helpers.adapter;
+package codeclan.com.helpers.adapters;
 
 import android.content.Context;
-import android.graphics.Movie;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,6 @@ import java.util.ArrayList;
 
 import codeclan.com.helpers.R;
 import codeclan.com.helpers.models.Task;
-import codeclan.com.helpers.models.ToDoList;
 
 /**
  * Created by yanren on 20/11/2017.
@@ -32,16 +30,16 @@ public class ToDoListAdapter extends ArrayAdapter<Task>{
 
         Task currentTask = getItem(position);
 
-        TextView taskId = listItemView.findViewById(R.id.item_id);
+        TextView taskId = listItemView.findViewById(R.id.task_id);
         taskId.setText(currentTask.getId().toString());
 
         TextView taskStartingTime = listItemView.findViewById(R.id.starting_time);
         taskStartingTime.setText(currentTask.getStartingTime().toString());
 
-        TextView taskFinishingTime = listItemView.findViewById(R.id.finish_time);
+        TextView taskFinishingTime = listItemView.findViewById(R.id.finishing_time);
         taskFinishingTime.setText(currentTask.getFinishingTime().toString());
 
-        TextView taskDescription = listItemView.findViewById(R.id.description);
+        TextView taskDescription = listItemView.findViewById(R.id.task_description);
         taskDescription.setText(currentTask.getTaskDescription());
 
 
